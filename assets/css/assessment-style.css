@@ -32,16 +32,12 @@
     font-weight: 600;
 }
 
-#custom-assessment h3 {
-    font-size: var(--text-size--h3);
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
-#custom-assessment h3 {
+#custom-assessment p.cal-question-num {
     font-size: var(--text-size--m);
     color: var(--color--blue);
     font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 #custom-assessment input {
