@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Emergency Fund Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/assessment-style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row" id="custom-assessment">
+                <div class="col-sm-12 mb-2">
+                    <h2 class="mb-3">Emergency Fund Assessment</h2>
+                </div>
+                <div class="col-sm-6">
+                    <div id="assessment-question-slide" class="carousel carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="assesment-card-one">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <p class="mb-3">Learn how your emergency fund stacks up by answering a few questions.
+                                            After you answer the questions, you’ll see a recommendation based on your
+                                            responses. (You may need to reference your bills to enter your expenses
+                                            accurately.)</p>
+                                        <h5>QUESTION 1 OF 9:</h5>
+                                        <label for="cal-question-one" class="form-label">How much have you saved in your emergency fund to date?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-one">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-one"
+                                                name="cal-question-one" placeholder="" required
+                                                data-prefix="prefix-question-one" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-two">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 2 OF 9:</h5>
+                                        <label for="cal-question-two" class="form-label">How much are you saving in your emergency fund every month?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-two">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-two"
+                                                name="cal-question-two" placeholder="" required
+                                                data-prefix="prefix-question-two" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-three">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 3 OF 9:</h5>
+                                        <label for="cal-question-three" class="form-label">What is your monthly cost for housing (mortgage, rent, HOA fees, etc.)?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-three">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-three"
+                                                name="cal-question-three" placeholder="" required
+                                                data-prefix="prefix-question-three" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-four">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 4 OF 9:</h5>
+                                        <label for="cal-question-four" class="form-label">What is your monthly cost for utilities and telecommunications services (electric, gas, water, internet, cable, etc.)?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-four">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-four"
+                                                name="cal-question-four" placeholder="" required
+                                                data-prefix="prefix-question-four" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-five">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 5 OF 9:</h5>
+                                        <label for="cal-question-five" class="form-label">What is your monthly cost for groceries?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-five">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-five"
+                                                name="cal-question-five" placeholder="" required
+                                                data-prefix="prefix-question-five" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-six">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 6 OF 9:</h5>
+                                        <label for="cal-question-six" class="form-label">What is your monthly cost for transportation (auto loan, fuel, maintenance, public transportation)?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-six">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-six"
+                                                name="cal-question-six" placeholder="" required 
+                                                data-prefix="prefix-question-six" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-seven">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 7 OF 9:</h5>
+                                        <label for="cal-question-seven" class="form-label">What is your monthly cost for insurance (home, renters, health, life, etc.)?</label>
+                                        <p>(Include the cost of auto insurance if you didn’t include it in your transportation cost.)</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-seven">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-seven"
+                                                name="cal-question-seven" placeholder="" required
+                                                data-prefix="prefix-question-seven" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-eight">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 8 OF 9:</h5>
+                                        <label for="cal-question-eight" class="form-label">What is your monthly cost for debt besides your mortgage and auto loan (credit card balance, home equity loan, personal loan, etc.)?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-eight">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-eight"
+                                                name="cal-question-eight" placeholder="" required
+                                                data-prefix="prefix-question-eight" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-nine">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <h5>QUESTION 9 OF 9:</h5>
+                                        <label for="cal-question-nine" class="form-label">What is the total cost of other monthly expenses that you could not, or would not, eliminate if you were facing an emergency?</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="prefix-question-nine">&nbsp;</span>
+                                            <input type="text" class="form-control form-prefix-dollar" id="cal-question-nine"
+                                                name="cal-question-nine" placeholder="" required
+                                                data-prefix="prefix-question-nine" />
+                                        </div>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                            <button class="btn btn-next" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="next">NEXT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="assesment-card-final">
+                                <div class="row mb-3">
+                                    <div class="col-sm-12">
+                                        <p>Based on your responses, you need <span id="assesment-expense-total">$0.00</span> to get by each month.</p>
+                                        <p>Financial experts recommend saving enough in an emergency account to cover three to six months’ worth of expenses, which means you will need <span id="assesment-bottom-range">$0.00</span> to <span id="assesment-top-range">$0.00</span>.</p>
+                                        <p>You’ve saved <span id="assesment-field-a">$0.00</span> to date. <span id="assesment-response"></span></p>
+                                        <div class="button-group">
+                                            <button class="btn btn-previous" type="button" data-bs-target="#assessment-question-slide" data-bs-slide="prev">GO BACK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/calculator-utilities.js"></script>
+    <script src="/assets/js/emergency-fund-assessment.js"></script>
+</body>
+
+</html>

@@ -28,7 +28,7 @@ var calc_utilities = {
         var num = num.toString().replace(/\$|\,|\%/g, '');
         options = (typeof options !== 'undefined') ? options : {};
         dec_precision = (typeof options.precision !== 'undefined') ? options.precision : dec_precision;
-        if (num === '') {
+        if (num === '' || num === null) {
             num = "0.00";
         }
         if (isNaN(num)) {
@@ -68,7 +68,7 @@ var calc_utilities = {
         "use strict";
         num = num.toString().replace(/\$|\,|\%/g, '');
         if (isNaN(num)) {
-            num = 0;
+            num = 0.00;
         }
         return num;
     },
