@@ -74,6 +74,10 @@
     margin-bottom: .625rem;
 }
 
+#custom-assessment .input-group-custom {
+    width: 150px !important;
+}
+
 #custom-assessment .input-group .input-group-text {
     padding: 0.375rem;
     background-color: #fff;
