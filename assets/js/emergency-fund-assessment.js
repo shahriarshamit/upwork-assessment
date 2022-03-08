@@ -51,6 +51,8 @@ window.onload = function () {
                 assessmentResponse = 'Your emergency savings is well below the recommended range. Consider adding to your emergency fund each month, and make sure you can access your funds quickly in case of an emergency.';
             } else if (totalFundSaved < (bottomRangeMonthlyCost * 0.5) && monthlyFundSaved > 0 && monthlyFundSaved < 50) {
                 assessmentResponse = 'Your emergency savings is well below the recommended range. Keep saving, and look for ways to put away a little more each month. Make sure you can access your funds quickly in case of an emergency.';
+            } else if (totalFundSaved < (bottomRangeMonthlyCost * 0.5) && monthlyFundSaved > 0 && monthlyFundSaved >= 50) {
+                assessmentResponse = 'Your emergency savings is well below the recommended range. Keep saving, and make sure you can access your funds quickly in case of an emergency.';
             } else if (totalFundSaved > (bottomRangeMonthlyCost * 0.5) && totalFundSaved < bottomRangeMonthlyCost && monthlyFundSaved === 0) {
                 assessmentResponse = 'Your emergency savings is below the recommended range. Consider adding to your emergency fund each month, and make sure you can access your funds quickly in case of an emergency.';
             } else if (totalFundSaved > (bottomRangeMonthlyCost * 0.5) && totalFundSaved < bottomRangeMonthlyCost && monthlyFundSaved > 1) {
